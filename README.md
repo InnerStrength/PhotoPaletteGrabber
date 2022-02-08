@@ -1,0 +1,2 @@
+# PhotoPaletteGrabber
+Attempted to make a module for my program to essentially do what Pillows.get_color wants to do, and that colorthief, does do. I utilized pixel mapping, kmeans, and some other things and such. Although the palette is made, it doesn't always grab (remotely) close colors... I'm posting my original code to maybe come back to it at a later date, but I ended up just importing colorthief.
