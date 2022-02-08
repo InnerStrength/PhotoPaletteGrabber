@@ -1,0 +1,28 @@
+{% extends "bootstrap/base.html" %}
+
+{% block content %}
+
+<div class="container"> <h1> Palette Generator</h1>
+<form method="post" action="{{ url_for('gen_palette')}}" enctype="multipart/form-data">
+    <input type="file" name="image">
+    <br>
+    <label>Palette Size</label>
+    <input type="text" name="size">
+    <br>
+    <label>Select Sensitivity (smaller number means less variation)</label>
+    <br>
+    <select name="sensitivity">
+        <option value="1">1 (very low var)</option>
+        <option value="2">2 (low var)</option>
+        <option value="3">3 (med var)</option>
+        <option value="4">4 (high var)</option>
+        <option value="5">5 (very high var)</option>
+    </select>
+    <br>
+    <br>
+    <input type="submit" value="Make Palette">
+</form>
+</div>
+
+
+{% endblock %}
